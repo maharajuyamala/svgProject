@@ -1,0 +1,81 @@
+svg {
+    height:100vh;
+}
+.square{
+    stroke-dasharray:1500;
+    stroke-dashoffset:-1500;
+    animation:draw-square 2s infinite;
+    transform-origin: 45% 45%;
+}
+@keyframes draw-square{
+    from{
+stroke-dashoffset:-1500;
+transform: rotate(0deg);
+    }
+    to{
+stroke-dashoffset:0;
+transform: rotate(720deg);
+    }
+}
+.hexigon{
+    stroke-dasharray:950;
+    stroke-dashoffset:-950;
+    animation:draw-hexigon 1s infinite;
+    transform-origin: 45% 45%;
+}
+@keyframes draw-hexigon{
+    from{
+stroke-dashoffset:-950;
+transform: rotate(0deg);
+    }
+    to{
+stroke-dashoffset:0;
+transform: rotate(360deg);
+    }
+}
+.monkey{
+    stroke:green;
+    stroke-width:2px;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: -2000;
+    animation:monkey 2s infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+@keyframes monkey{
+    0%{
+stroke-dashoffset: -2000;
+stroke:orange;
+    }
+    25%{
+        stroke:blue;
+    }
+    50%{
+        stroke:red;
+    }
+    100%{
+stroke-dashoffset: 0;
+stroke:green;
+    }
+}
+.st1{
+    stroke-dasharray:563;
+    animation: draw 2s forwards infinite;
+}
+@keyframes draw {
+    from{
+stroke-dashoffset: -563;
+    }
+    to{
+stroke-dashoffset: 0;
+    }
+}
+.twitter-outline,
+.twitter-icon{
+    transition: 300ms all;
+    transform-origin: 50% 50%;
+}
+.youtube-icon, .youtube-outline, .youtube-inner-circle {
+transition: 300ms all;
+transform-origin: 50% 50%;
+}
