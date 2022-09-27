@@ -1,0 +1,72 @@
+.twitter-outline,
+.twitter-icon {
+  transition: 300ms all;
+  transform-origin: 22% 13%;
+}
+
+.twitter-icon-group:hover .twitter-outline {
+  transform: scale(0);
+}
+.twitter-icon-group:hover .twitter-icon {
+  transform: scale(2);
+  stroke: #4099ff;
+}
+
+.youtube-icon, .youtube-outline, .youtube-inner-circle {
+  transition: 300ms all;
+  transform-origin: 50% 13%;
+}
+
+.youtube-icon-group:hover .youtube-outline {
+  transform: scale(1.2);
+}
+.youtube-icon-group:hover .youtube-inner-circle {
+  fill: red;
+}
+.youtube-icon-group:hover .youtube-icon {
+  fill: white;
+}
+
+.facebook-detail, .facebook-outline {
+  transition: 300ms all;
+  transform-origin: 77% 13%;
+}
+
+.facebook-detail {
+  opacity: 0;
+}
+
+.facebook-icon-group:hover .facebook-outline {
+  transform: scale(1.8);
+  opacity: 0;
+}
+.facebook-icon-group:hover .facebook-detail {
+  opacity: 1;
+  transform: scale(0.8) rotation(180deg);
+}
+
+.circleO {
+  -webkit-animation: 3s move alternate infinite;
+          animation: 3s move alternate infinite;
+}
+
+@-webkit-keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+.back {
+  background: #555;
+}/*# sourceMappingURL=news.css.map */
